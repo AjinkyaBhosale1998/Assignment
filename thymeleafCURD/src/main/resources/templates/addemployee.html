@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr th:each="std:${Student}"> <!--Student is key of controler std is object name -->
+<td th:utext="${std.id}">No id available</td>
+<td th:utext="${std.name}">No id aviable</td>
+</tr>
+</table>
+
+
+
+
+</body>
+</html>
